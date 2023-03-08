@@ -13,7 +13,7 @@ public class OAuthController {
      */
     @ResponseBody
     @GetMapping("/kakao")
-    public String kakaoCallback(@RequestParam String code){
+    public Object kakaoCallback(@RequestParam String code) {
         System.out.println(code);
         return code;
     }
